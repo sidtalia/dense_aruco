@@ -1,0 +1,2 @@
+# pip / scikit-build package, not a ROS package. Install with:
+#   python3 -m pip install --user --break-system-packages -e src/dense_aruco

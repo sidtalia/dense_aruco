@@ -1,0 +1,16 @@
+[build-system]
+requires = ["scikit-build-core>=0.10", "pybind11>=2.12"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "dense-aruco"
+version = "0.1.0"
+description = "OpenCV-compatible ArUco detector with C++ dense internal-bit pose refinement"
+requires-python = ">=3.9"
+dependencies = ["numpy"]
+
+[tool.scikit-build]
+cmake.build-type = "Release"
+
+[tool.scikit-build.wheel.packages]
+dense_aruco = "python/dense_aruco"
